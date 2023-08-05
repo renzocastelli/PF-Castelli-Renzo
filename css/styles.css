@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/* Inicia la parte general del documento, muestra las secciones grandes en las q se divide. */
+* {
+  box-sizing: border-box;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+}
+
+.derecha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 4px;
+}
+
+.izquierda {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 11%;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+h1 {
+  color: #4169e1;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2 {
+  padding: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  color: #4169e1;
+  font-weight: 900;
+}
+
+h3 {
+  padding: 5px;
+  font-size: 38px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  color: #4169e1;
+  text-decoration: underline;
+}
+
+.titulos-ofertas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Finaliza la parte general */
+/* Inicia la parte del header, como lo configure y lo deje pegado en la parte de arriba, mas el dropdown menu de los productos */
+.fixed-header {
+  width: 100%;
+  height: 100%;
+}
+
+.d-flex {
+  border: 2px solid green;
+}
+
+.d-block {
+  margin-top: 2.8%;
+}
+
+.form-control {
+  background-color: white;
+  width: 30%;
+}
+
+.btn-outline-success {
+  background-color: white;
+  color: gray;
+}
+
+.royalblue-bg {
+  background-color: royalblue;
+}
+
+.navbar-brand {
+  font-size: medium;
+}
+
+.navbar-link {
+  color: white;
+}
+
+.dropdown-item {
+  margin-left: 15px;
+}
+
+.dropdown-divider {
+  padding: 0;
+  width: 100%;
+}
+
+/* Finaliza la parte del header */
+/* Esta es la parte del inicio, en la cual muestro unos productos, mas un video q muestra componentes y una oferta semanal. */
+.d-block {
+  width: 100%;
+  height: 100%;
+  margin-top: 2.9%;
+}
+
+.producto-inicio {
+  display: flex;
+  border: 2px solid white;
+  margin: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+.producto-inicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px black;
+}
+
+.mouse-inicio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.placa-inicio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.monitor-inicio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.procesador-inicio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.oferta {
+  width: 18%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  margin-top: 15px;
+  transition: transform 0.3s ease-in-out;
+  animation-name: Oferta;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  transform: rotate 45deg;
+  transition: transform 9s ease;
+}
+
+@keyframes oferta {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: lightblue;
+  }
+  50% {
+    background-color: lightcoral;
+    color: white;
+  }
+  75% {
+    background-color: lightpink;
+  }
+  100% {
+    background-color: lightgray;
+  }
+}
+.oferta:hover {
+  animation: oferta 2s infinite;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.video {
+  display: flex;
+  width: 70%;
+  height: 470PX;
+  margin-top: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+iframe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mejores-componentes {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 100%;
+  color: #4169e1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mejores-componentes li {
+  margin: 15px;
+  color: #4169e1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  font-size: medium;
+}
+
+/* Esta es la parte en la cual se encuentra el inicio de sesion y la creacion de cuenta, hecho con un elemento form. */
+form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.card-body {
+  border: 1px solid #4169e1;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  color: #4169e1;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #4169e1;
+}
+
+.form-check-label {
+  font-weight: normal;
+}
+
+form input[type=user],
+form input[type=password],
+form input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #4169e1;
+}
+
+form input[type=submit] {
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background-color: darkblue;
+}
+
+.btn-primary {
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 27%;
+}
+.btn-primary:hover {
+  background-color: #4169e1;
+  border-color: #4169e1;
+}
+
+.create-account {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.card-link {
+  color: #4169e1;
+}
+.card-link:hover {
+  text-decoration: none;
+  color: #4169e1;
+}
+
+/* Finaliza la parte del inicio de sesion */
+/* Boton de realizar el pedido y agregar al carrito */
+.checkout-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: #4169e1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.checkout-button:hover {
+  background-color: #4CAF50;
+  transform: scale(1.1);
+}
+
+.carrito {
+  border-radius: 15px;
+  background-color: rgb(34, 129, 187);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5%;
+  margin-top: 2.5%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.carrito:hover {
+  background-color: #4CAF50;
+  transform: scale(1.1);
+}
+
+/* Finaliza el agregar al carrito */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
+  margin-top: 10%;
+  background-color: white;
+  border: 1px solid #4169e1;
+}
+
+.carro-de-compras {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Inicia la parte de las categorias, el como fueron acomodadas y su estilo */
+.section-placas, .section-monitores, .section-perifericos, .section-procesadores {
+  display: grid;
+  grid-template-columns: 0.22fr 0.22fr 0.22fr 0.22fr;
+  column-gap: 150px;
+  margin-left: 70px;
+}
+
+.h1-categorias {
+  margin-top: 70px;
+  padding: 15px;
+}
+
+.procesador-categoria {
+  width: 125%;
+  padding-top: 5px;
+}
+
+.periferico-categoria {
+  width: 125%;
+  padding-top: 5px;
+}
+
+.monitores-categoria {
+  width: 125%;
+  padding-top: 5px;
+}
+
+.placas-categoria {
+  width: 125%;
+  padding-top: 5px;
+}
+
+.producto {
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+.producto:hover {
+  transform: scale(1.04);
+  box-shadow: 0 1px 2px black;
+}
+
+/* Finaliza la partde las categorias */
+/* Empieza la parte del footer en el cual se encuentra el copyright y los iconos de las redes sociales. */
+.footer-micuenta {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #4169e1;
+  height: 70px;
+  margin: 0;
+  margin-top: 300px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 15px;
+  margin-bottom: 8px;
+}
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.copyrigth {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  h1 {
+    justify-content: center;
+    text-align: center;
+  }
+  .izquierda {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .fixed-header {
+    margin-top: 10.5%;
+  }
+  .form-control {
+    width: 90%;
+  }
+  .btn-outline-success {
+    margin-top: 1%;
+    margin-left: 35%;
+  }
+  .navbar-collapse {
+    margin-left: 20px;
+  }
+  .titulo-ofertas {
+    margin-left: 0;
+    text-align: center;
+  }
+  .producto-inicio {
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    flex-direction: column;
+  }
+  .video ol {
+    width: 95%;
+    margin-left: 7px;
+  }
+  .section-procesadores,
+  .section-perifericos,
+  .section-monitores,
+  .section-placas {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    margin-left: 0;
+    width: 78%;
+  }
+  .titulos-ofertas {
+    flex-direction: column;
+  }
+  .texto-buscador {
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    margin-top: 20%;
+  }
+  .derecha {
+    width: 100%;
+    flex-direction: wrap;
+  }
+  .oferta {
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 40%;
+  }
+  .best-hardware {
+    width: 20%;
+  }
+  .producto-inicio {
+    width: 95%;
+  }
+  .d-block.w-100 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.8%;
+  }
+  li {
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .d-block.w-100 {
+    margin-top: 3%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .d-block.w-100 {
+    margin-top: 4%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .d-block.w-100 {
+    margin-top: 7%;
+  }
+}
+/* Finaliza la parte mobile */
+
+/*# sourceMappingURL=styles.css.map */

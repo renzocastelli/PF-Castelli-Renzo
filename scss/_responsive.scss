@@ -1,0 +1,119 @@
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    
+    h1{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .izquierda {
+        margin-left: 0;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .fixed-header {
+        margin-top: 10.5%;
+    }
+    .form-control{
+        width: 90%;
+    }
+    .btn-outline-success{
+        margin-top: 1%;
+        margin-left: 35%;
+
+    }
+
+    .navbar-collapse{
+        margin-left: 20px;
+    }
+    
+    .titulo-ofertas {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .producto-inicio {
+        flex-direction: column;
+    }
+
+    .video {
+        width: 100%;
+        flex-direction: column;
+
+        ol {
+            width: 95%;
+            margin-left: 7px;
+        }
+    }
+
+    .section-procesadores,
+    .section-perifericos,
+    .section-monitores,
+    .section-placas {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        margin-left: 0;
+        width: 78%;
+    }
+
+    .titulos-ofertas {
+        flex-direction: column;
+    }
+
+    .texto-buscador {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .derecha {
+        width: 100%;
+        flex-direction: wrap;
+    }
+
+    .oferta {
+        width: 95%;
+        margin-left: 10px;
+        margin-top: 40%;
+    }
+
+    .best-hardware {
+        width: 20%;
+    }
+
+    .producto-inicio {
+        width: 95%;
+    }
+
+    .d-block.w-100 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0.8%;
+    }
+
+    li {
+        margin-left: -20px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .d-block.w-100{
+        margin-top: 3%;
+    }
+}
+@media only screen and (max-width: 375px){
+    .d-block.w-100{
+        margin-top: 4%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .d-block.w-100{
+        margin-top: 7%;
+    }
+}
+
+/* Finaliza la parte mobile */

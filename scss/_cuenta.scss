@@ -1,0 +1,94 @@
+/* Esta es la parte en la cual se encuentra el inicio de sesion y la creacion de cuenta, hecho con un elemento form. */
+form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.card-body {
+    border: 1px solid $primary-color;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    color: $primary-color;
+}
+
+.form-label {
+    font-weight: bold;
+    color: $primary-color;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+form input[type="user"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+}
+
+form input[type="submit"] {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 27%;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.create-account {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.card-link {
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+
+/* Finaliza la parte del inicio de sesion */

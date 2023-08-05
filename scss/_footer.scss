@@ -1,0 +1,41 @@
+/* Empieza la parte del footer en el cual se encuentra el copyright y los iconos de las redes sociales. */
+
+.footer-micuenta {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: $primary-color;
+    height: 70px;
+    margin: 0;
+    margin-top: 300px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+
+.social-icons {
+    a {
+        display: inline-block;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin: 15px;
+        margin-bottom: 8px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.copyrigth {
+    color: #666;
+    font-size: 14px;
+}

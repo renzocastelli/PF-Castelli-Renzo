@@ -1,0 +1,153 @@
+/* Esta es la parte del inicio, en la cual muestro unos productos, mas un video q muestra componentes y una oferta semanal. */
+.d-block {
+    width: 100%;
+    height: 100%;
+    margin-top: 2.9%;
+}
+
+.producto-inicio {
+    display: flex;
+    border: 2px solid white;
+    margin: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 5px black;
+    }
+}
+
+.mouse-inicio {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.placa-inicio {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.monitor-inicio {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.procesador-inicio {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.oferta {
+    width: 18%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+    animation-name: Oferta;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    transform: rotate (45deg);
+    transition: transform 9s ease;
+}
+
+@keyframes oferta {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    0% {
+        background-color: white;
+    }
+
+    25%{
+        background-color: lightblue;
+    }
+
+    50% {
+        background-color: lightcoral;
+        color: white;
+    }
+    75%{
+        background-color:lightpink;
+    }
+
+    100% {
+        background-color: lightgray;
+    }
+}
+
+.oferta:hover {
+    animation: oferta 2s infinite;
+}
+.dropdown-item{
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.video {
+    display: flex;
+    width: 70%;
+    height: 470PX;
+    margin-top: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mejores-componentes {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 100%;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+li {
+    margin: 15px;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: medium;
+    }
+}
